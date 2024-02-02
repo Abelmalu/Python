@@ -1,19 +1,14 @@
 import random
 
 
-
-
 def new_game():
 
     choices = ['rock', 'paper', 'scissors']
 
-
     computer = random.choice(choices)
-
 
     user = input('rock,paper,scissors:  ')
     user = user.lower()
-
 
     if computer == 'rock':
         if computer == user:
@@ -33,7 +28,6 @@ def new_game():
             print('Computer:'+computer)
             print('Player:'+user)
 
-
     if computer == 'scissors':
         if computer == user:
             print('draw ')
@@ -52,7 +46,6 @@ def new_game():
             print('wrong input')
             print('Computer:'+computer)
             print('Player:'+user)
-
 
     if computer == 'paper':
         if computer == user:
@@ -82,10 +75,5 @@ while response == 'yes':
     response = response.lower()
     if response == 'no':
         break
-    
 
     new_game()
-
-
-
-
